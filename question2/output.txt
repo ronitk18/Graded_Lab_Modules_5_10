@@ -1,0 +1,43 @@
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ pwd
+/home/ronit/Question1/question2
+
+/home/ronit/Question1/question2
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ nano log_analyze.sh
+
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ chmod +x log_analyze.sh
+
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ ./log_analyze.sh
+Error: Please provide exactly one log file as argument.
+
+/home/ronit/Question1/question2
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ nano log_analyze.sh
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ chmod +x log_analyze.sh
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ ./log_analyze.sh
+Error: Please provide exactly one log file as argument.
+
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ ./log_analyze.sh fake.log
+Error: File does not exist.
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ nano sample.log
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ y
+y: command not found
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ nano sample.log
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ ./log_analyze.sh sample.log
+Total log entries: 4
+INFO messages: 1
+WARNING messages: 1
+ERROR messages: 2
+Most recent ERROR message:
+2025-01-12 10:17:10 ERROR Network timeout
+Report generated: logsummary_2026-02-05.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ ls
+log_analyze.sh  logsummary_2026-02-05.txt  sample.log
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2$ cat logsummary_$(date +%Y-%m-%d).txt
+Log Summary Report
+Date: 2026-02-05
+-------------------------
+Total log entries: 4
+INFO messages: 1
+WARNING messages: 1
+ERROR messages: 2
+Most recent ERROR message:
+2025-01-12 10:17:10 ERROR Network timeout
