@@ -1,0 +1,30 @@
+ronit@DESKTOP-VSMQ3QL:~/Question1$ pwd
+/home/ronit/Question1
+
+ronit@DESKTOP-VSMQ3QL:~/Question1$ nano analyze.sh
+ronit@DESKTOP-VSMQ3QL:~/Question1$
+ronit@DESKTOP-VSMQ3QL:~/Question1$ chmod +x analyze.sh
+
+ronit@DESKTOP-VSMQ3QL:~/Question1$ ./analyze.sh
+Error: Exactly one argument is required.
+
+
+ronit@DESKTOP-VSMQ3QL:~/Question1$ ./analyze.sh fakefile.txt
+Error: Path does not exist.
+
+
+ronit@DESKTOP-VSMQ3QL:~/Question1$ echo "Hello world" > sample.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1$ echo "This is a test file" >> sample.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1$ ./analyze.sh sample.txt
+It is a file.
+Number of lines: 2
+Number of words: 7
+Number of characters: 32
+ronit@DESKTOP-VSMQ3QL:~/Question1$ mkdir testdir
+ronit@DESKTOP-VSMQ3QL:~/Question1$ touch testdir/file1.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1$ touch testdir/file2.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1$ touch testdir/file3.log
+ronit@DESKTOP-VSMQ3QL:~/Question1$ ./analyze.sh testdir
+It is a directory.
+Total number of files: 3
+Number of .txt files: 2

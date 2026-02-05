@@ -1,0 +1,32 @@
+chmod +x analyze.sh
+Gave execute permission to the script so it can run as a program.
+
+./analyze.sh
+Ran the script without arguments and received an error because exactly one argument is required.
+
+./analyze.sh fakefile.txt
+Provided a non-existing path and the script displayed a path does not exist error.
+
+echo "Hello world" > sample.txt
+Created a sample file to test file analysis functionality.
+
+echo "This is a test file" >> sample.txt
+Added another line to the sample file.
+
+./analyze.sh sample.txt
+The script detected a file and displayed the number of lines, words, and characters.
+
+mkdir testdir
+Created a directory to test directory functionality.
+
+touch testdir/file1.txt
+Created a text file inside the directory.
+
+touch testdir/file2.txt
+Created another text file inside the directory.
+
+touch testdir/file3.log
+Created a non-text file inside the directory.
+
+./analyze.sh testdir
+The script detected a directory and displayed total files and number of .txt files.
