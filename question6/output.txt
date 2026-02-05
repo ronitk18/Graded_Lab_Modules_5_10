@@ -1,0 +1,12 @@
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5$ mkdir question6
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5$ cd question6
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5/question6$ pwd
+/home/ronit/Question1/question2/question3/question4/question5/question6
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5/question6$ nano metrics.sh
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5/question6$ chmod +x metrics.sh
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5/question6$ nano input.txt
+ronit@DESKTOP-VSMQ3QL:~/Question1/question2/question3/question4/question5/question6$ ./metrics.sh
+Longest word: efficiently
+Shortest word: is
+Average word length: 5.78
+Total unique words: 16
